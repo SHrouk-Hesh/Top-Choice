@@ -95,7 +95,11 @@
             <div id="successMessage" class="success-message">Message sent successfully!</div>
         </div>
     </div>
-
+    <div class="scroll-buttons">
+        <button onclick="scrollToTop()">&#8593; Top</button>
+        <button onclick="scrollToMiddle()">&#8594; Middle</button>
+        <button onclick="scrollToBottom()">&#8595; Bottom</button>
+    </div>
     <div class="container">
         <div class="footer">
             <div class="footer-col-1">
@@ -195,6 +199,29 @@
                 successMessage.style.display = "none";
             }, 2000); // Hide after 2 seconds
         }
+
+        var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function scrollToMiddle() {
+            window.scrollTo({ top: window.innerHeight / 2, behavior: 'smooth' });
+        }
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+
 
     </script>
 </body>
