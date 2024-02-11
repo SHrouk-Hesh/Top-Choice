@@ -32,7 +32,13 @@
         </div>
             
         </div>
-        
+        <div class="scroll-buttons">
+            <button onclick="scrollToTop()">&#8593; Top</button>
+            <button onclick="scrollToMiddle()">&#8594; Middle</button>
+            <button onclick="scrollToBottom()">&#8595; Bottom</button>
+        </div>
+
+        <!----js for toggle menu-------->
         <div class="small-container">
             <img src="images/de39cba1-f897-4eab-b6a2-a027c159cc54.jpeg" width="100%">
             
@@ -110,7 +116,7 @@
                 <p>249.00 EGP</p>
                 </div>
             <div class="col-4">
-                <img src="images/972ea84745e3e2b3131cfd52c0497bcf.jpg" >
+                <img src="" >
                 <h4>Double-breasted Blazer</h4>
                 <div class="rating">
                 <i class="fa fa-star"></i>
@@ -148,7 +154,7 @@
                 </div>
             <div class="row">
                 <div class="col-4">
-    <img src="images/87d3bb2ac86ff20024db2ee6019f5294.jpg"  >
+    <img src="images/11.jpg"  >
                 <h4>Sleeveless Jersey Dress</h4>
                 <div class="rating">
                 <i class="fa fa-star"></i>
@@ -389,6 +395,28 @@
     arrow.addEventListener("click", function() {
         // Code to handle click on arrow
     });
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function scrollToMiddle() {
+            window.scrollTo({ top: window.innerHeight / 2, behavior: 'smooth' });
+        }
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+    
 </script>
 </body>
 </html>
