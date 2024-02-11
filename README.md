@@ -22,3 +22,7 @@ Top Choice website enables users to set up online shops, customers to browse thr
 
 ![image](https://github.com/SHrouk-Hesh/Top-Choice/assets/121517766/afd695ef-7801-40d7-974e-a2563426401c)
 
+## Demo Video Link:
+https://drive.google.com/file/d/1a5VgqSCYmB1xBv-dkmU5Q8Aj9MBO0BNO/view?usp=drive_link  
+
+https://github.com/SHrouk-Hesh/Top-Choice/issues/1#issue-2129194362
