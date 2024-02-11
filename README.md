@@ -1,7 +1,7 @@
 # Online-shopping-website
 Top Choice is online shopping website which is to encourage customers to shop virtually using the Internet and to purchase goods and this Online System with different features has been launched to make the online shopping experience smooth and easy to use.
 
-![image](https://github.com/SHrouk-Hesh/Online-shopping-website/assets/121517766/329194a7-bbaa-490b-b0e8-ef9b8af74c11)
+![image](https://github.com/SHrouk-Hesh/Top-Choice/assets/121517766/5d3d7286-2570-432a-b017-e3d2453a8313)
 
 # Why Top Choice?
 Top Choice website enables users to set up online shops, customers to browse through the shops, and a system administrator to approve and reject requests for new shops and maintain lists of shop categories.
