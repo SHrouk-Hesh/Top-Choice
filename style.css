@@ -1,3 +1,51 @@
+
+/* slider */
+/* Add your CSS styles here */
+/* Add this CSS for the slider */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slider-nav {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #e11a1a;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #e40707;
+}
+
+
+
+/******************************************/
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -373,11 +421,11 @@ th:last-child{
 /*---------account page--*/
 .account-page{
     padding: 50px 0;
-     background: radial-gradient(#fff,#efefef);
+    background: radial-gradient(#fff,#efefef);
 }
 /*aywaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
 .col-2 img{
- padding-left: 30px;
+padding-left: 30px;
 
 }
 .form-container{
@@ -446,15 +494,6 @@ form a{
 }
 
 
-
-
-
-
-
-
-
-
-
 /*---------media query for less that 600 px--*/
 @media only screen and (max-width:00px){
     .row{
@@ -465,7 +504,7 @@ form a{
     }
 }
 .singl  e-product .row{
-     text-align: left;
+    text-align: left;
 }
 .single-product .row{
 padding: 20px 0;
@@ -477,10 +516,34 @@ padding: 20px 0;
 .cart-info p{
     display: none;
 }
+/***************************/
+/* Add this CSS to your existing style.css file or create a new one */
 
+.scroll-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
 
+.scroll-buttons button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
-
+.scroll-buttons button:hover {
+    background-color: #44d24b; /* Darker Green */
+}
 
 
 
