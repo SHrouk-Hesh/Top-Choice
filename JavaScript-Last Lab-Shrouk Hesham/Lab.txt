@@ -1,0 +1,3 @@
+override @@ iter for array 
+using generator 
+convert object to iterable by iterator and generator

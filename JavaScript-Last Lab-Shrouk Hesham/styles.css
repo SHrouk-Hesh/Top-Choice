@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.shape-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square, .circle {
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #dd1515;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.square h2, .circle h2 {
+    margin-top: 0;
+}
+
+.square p, .circle p {
+    margin-bottom: 0;
+}
