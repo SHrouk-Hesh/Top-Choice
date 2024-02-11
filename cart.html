@@ -27,7 +27,11 @@
             <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div> 
     </div>
-    
+    <div class="scroll-buttons">
+        <button onclick="scrollToTop()">&#8593; Top</button>
+        <button onclick="scrollToMiddle()">&#8594; Middle</button>
+        <button onclick="scrollToBottom()">&#8595; Bottom</button>
+    </div>
     <!-- Cart items details -->
     <div class="small-container cart-page">
         <table>
@@ -148,6 +152,26 @@
             } else {
                 MenuItems.style.maxHeight= "0px";
             }
+        }
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        function scrollToMiddle() {
+            window.scrollTo({ top: window.innerHeight / 2, behavior: 'smooth' });
+        }
+        function scrollToBottom() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
         }
     </script>
 </body>
